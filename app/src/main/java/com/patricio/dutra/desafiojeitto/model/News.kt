@@ -2,13 +2,13 @@ package com.patricio.dutra.desafiojeitto.model
 
 import java.util.*
 
-class News {
+data class News (
 
-    var title:String = ""
-    var url:String = ""
-    var imageUrl:String = ""
-    var newsSite:String = ""
-    var summary:String = ""
-    var message: String = ""
+    var title:String?,
+    var url:String?,
+    var imageUrl:String?,
+    var newsSite:String?,
+    var summary:String?,
+    var message: String?
 
-}
+)

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Desafio Jeitto</string>
+    <string name="title_toolbar">Notícias</string>
+    <string name="title_dialog">Não foi possível carregar as notícias</string>
+    <string name="hint_searchview">O que deseja encontrar?</string>
+    <string name="ok">Ok</string>
 </resources>

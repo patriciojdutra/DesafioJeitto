@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -33,7 +33,7 @@
             android:id="@+id/txtTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Notícias"
+            android:text="@string/title_toolbar"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp"

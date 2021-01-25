@@ -5,13 +5,12 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class Retrofit {
 
-    companion object {
-
-        fun getRetrofitInstance(url : String) : Retrofit {
-            return Retrofit.Builder()
-                .baseUrl(url)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build()
-        }
+    fun getRetrofitInstance() : Retrofit {
+        return Retrofit.Builder()
+            .baseUrl(Constants.URLSERVER)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
     }
+
+    val endpoint: Endpoint = getRetrofitInstance().create(Endpoint::class.java)
 }

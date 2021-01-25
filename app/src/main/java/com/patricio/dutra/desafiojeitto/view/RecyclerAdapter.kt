@@ -1,11 +1,9 @@
-package com.patricio.dutra.desafiojeitto.utils
+package com.patricio.dutra.desafiojeitto.view
 
 import android.app.Activity
 import android.app.AlertDialog
 import android.app.Dialog
 import android.content.Intent
-import android.graphics.Bitmap
-import android.icu.number.NumberFormatter.with
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
@@ -14,19 +12,15 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.patricio.dutra.desafiojeitto.R
 import com.patricio.dutra.desafiojeitto.model.News
-import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
-import com.squareup.picasso.Picasso.LoadedFrom
-import java.lang.Exception
 
 
 class RecyclerAdapter (private val newsList: List<News>, var act: Activity): RecyclerView.Adapter<RecyclerAdapter.Holder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.Holder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
 
         val v = LayoutInflater.from(parent.context).inflate(R.layout.list_news,parent,false) as View
         return Holder(v)
@@ -35,7 +29,7 @@ class RecyclerAdapter (private val newsList: List<News>, var act: Activity): Rec
 
     override fun getItemCount() = newsList.size
 
-    override fun onBindViewHolder(holder: RecyclerAdapter.Holder, position: Int) {
+    override fun onBindViewHolder(holder: Holder, position: Int) {
 
         holder.txtQuant.setText((position+1).toString())
         holder.txtHeadNews.setText(newsList[position].newsSite)
