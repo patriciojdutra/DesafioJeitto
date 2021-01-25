@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
     private val viewModel: NewsViewModel by viewModels()
     private lateinit var adapter: RecyclerAdapter
+    var startView = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -90,9 +91,12 @@ class MainActivity : AppCompatActivity() {
 
     fun loadList(list: List<News>){
 
-        ObjectAnimator.ofFloat(cardView, "translationX", 1000f, 0f).apply {
-            duration = 2000
-            start()
+        if(!startView) {
+            ObjectAnimator.ofFloat(cardView, "translationX", 1000f, 0f).apply {
+                duration = 2000
+                start()
+            }
+            startView = true
         }
 
         val linearLayoutManager = LinearLayoutManager ( this )
