@@ -3,7 +3,7 @@
 ## Como executar o aplicativo?
 
 Para executar o aplicativo, baixe o arquivo apk no link
-[clique aqui para baixar o aplicativo ](https://github.com/patriciojdutra/DesafioJeitto/blob/master/app-desafio-jeitto.apk)
+[clique aqui para baixar o aplicativo ](https://github.com/patriciojdutra/DesafioJeitto/blob/master/app-desafio-jeitto.apk?raw=true)
  e instale em seu smartphone.
 
 ## Requisitos do aplicativo
