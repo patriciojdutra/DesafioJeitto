@@ -28,10 +28,13 @@ Fluxos alternativos
   * Botões:
       * OK: O aplicativo é fechado.
       
+ **Design das telas**
+ ![](https://github.com/patriciojdutra/DesafioJeitto/blob/master/Screenshot_1.png)
+      
 [Clique aqui para saber mais sobre o desafio.](https://github.com/Jeitto/Android-Challenge/)
       
       
-## Telas
+## Resultado das telas
 
 #### Carregando os dados iniciais e paginação.
 ![Gifs](https://github.com/patriciojdutra/DesafioJeitto/blob/master/mobizen_20210125_022457.gif)
