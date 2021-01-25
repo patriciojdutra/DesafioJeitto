@@ -45,6 +45,7 @@ class NewsViewModel : ViewModel() {
                 }
             }
 
+
             override fun onFailure(result: Call<ArrayList<News>>, t: Throwable) {
                 error.value = t.message
                 loading.value = false
