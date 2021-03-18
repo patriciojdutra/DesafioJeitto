@@ -1,4 +1,4 @@
-package com.patricio.dutra.desafiojeitto.utils
+package com.patricio.dutra.desafiojeitto.data
 
 import com.patricio.dutra.desafiojeitto.model.News
 import retrofit2.Call

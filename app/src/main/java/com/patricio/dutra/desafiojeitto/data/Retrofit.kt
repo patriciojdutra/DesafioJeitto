@@ -1,5 +1,6 @@
-package com.patricio.dutra.desafiojeitto.utils
+package com.patricio.dutra.desafiojeitto.data
 
+import com.patricio.dutra.desafiojeitto.utils.Constants
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
